@@ -53,7 +53,8 @@ nav a {
 /* Header releated styles */
 .header {
   background-color: #fff8f3;
-  background-image: url("../images/header_bg.png"), url("../images/developer.png");
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: bottom right, top left;
 }
@@ -215,18 +216,45 @@ textarea {
   width: 100%;
 }
 
-
 /* responsive styles */
-.hide{
+.hide {
   display: none;
 }
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-  .skills-container{
+  .skills-container,
+  .resume-container, footer {
     flex-direction: column;
   }
-  #what-I-do-description{
+  #what-I-do-description {
     padding: 10px;
+  }
+
+  footer{
+    padding: 10px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .social-links {
+    text-align: center;
+  }
+
+  .contact input[type="text"],
+.contact input[type="email"],
+textarea{
+  width: 70%;
+}
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+  .skills-container,
+  .resume-container {
+    flex-direction: column;
+  }
+  footer{
+    padding: 30px;
   }
 }
