@@ -223,15 +223,34 @@ textarea {
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
+  .header{
+    background-image: none;
+  }
+  .banner img{
+    width: 100%;
+  }
+  .banner,
+  nav,
+  nav > ul,
   .skills-container,
-  .resume-container, footer {
+  .resume-container, footer, .about-info-container {
     flex-direction: column;
   }
+
+  nav>ul{
+    gap: 10px;
+  }
+
+  .banner,
   #what-I-do-description {
     padding: 10px;
   }
 
-  footer{
+  .btn-primary{
+    margin-bottom: 15px;
+  }
+
+  footer, .about{
     padding: 10px;
   }
   .footer-column{
@@ -256,5 +275,11 @@ textarea{
   }
   footer{
     padding: 30px;
+  }
+  .btn-primary{
+    margin-bottom: 15px;
+  }
+  .header{
+    background-image: none;
   }
 }
